@@ -1,0 +1,193 @@
+body {
+  background-color: black;
+  margin-top: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Применяем общий фон для всего сайта */
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Стили для навигационной полосы */
+.navbar {
+  background-color: #333;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  overflow: hidden;
+}
+
+/* Стили для навигационных ссылок */
+.navbar nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.navbar nav a:hover {
+  color: #aaa;
+}
+
+/* Стили для изображений соц. сетей */
+.navbar-links__imgs {
+  display: inline-block;
+  gap: 10px;
+  min-width: 0;
+}
+
+.navbar-links__imgs a {
+  min-width: 0;
+}
+
+.navbar-links__imgs a img {
+  width: 20px;
+  height: auto;
+  transition: opacity 0.3s;
+}
+
+/* Увлекательно скрывать слова и изображения при уменьшении */
+.navbar-links__imgs a:hover img {
+  opacity: 0.7;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  .navbar nav {
+    gap: 5px;
+  }
+
+  .navbar nav,
+  .navbar-links__imgs {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .navbar nav a,
+  .navbar-links__imgs a {
+    font-size: 0.8em;
+  }
+
+  .navbar-links__imgs a img {
+    width: 15px;
+  }
+}
+
+.container {
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content {
+  margin-top: 111px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  margin-bottom: 80px;
+  color: #3f8e00;
+}
+
+.main-content a {
+  background-color: #3f8e00;
+  color: #fff;
+  text-decoration: none;
+  padding: 22px 75px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.container a {
+  margin-top: 25px;
+}
+
+/* Адаптация для мобильных устройств */
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .main-content p {
+    margin-bottom: 40px;
+  }
+
+  .main-content a {
+    padding: 15px 50px;
+  }
+
+  .container a {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .main-content p {
+    margin-bottom: 20px;
+  }
+
+  .main-content a {
+    padding: 10px 30px;
+  }
+
+  .container a {
+    margin-top: 10px;
+  }
+
+  .container img {
+    margin-top: 10px;
+  }
+}
